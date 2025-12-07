@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Wiki | undercraft</title>
+
+<style>
+    body {
+        background-color: black;
+    }
+    .a {
+        color: rgb(0, 255, 0);
+        text-align: center;
+        margin-top: 300px;
+    }
+    .b {
+        color: rgb(0, 255, 0);
+        text-align: center;
+        margin-top: 50px;
+    }
+    .c {
+        background-color: rgba(0, 255, 0, 0.4);
+        color: rgb(0, 255, 0);
+    }
+</style>
+
+</head>
+<body>
+
+<h1 class="a" id="t1">𝚁𝚎𝚍𝚒𝚛𝚎𝚌𝚌𝚒𝚘𝚗𝚊𝚗𝚍𝚘...</h1>
+<h3 class="b" id="t2">si no has sido redireccionado <a href="https://undercraft.netlify.app/error.html" class="c" id="alt" target="_blank">haz click aqui</a></h3>
+
+
+<script>
+function limpiarPantalla() {
+    document.getElementById("t1").style.display = "none";
+    document.getElementById("t2").style.display = "none";
+    document.body.style.backgroundColor = "black";
+}
+
+// Redirección automática
+setTimeout(function() {
+    limpiarPantalla();
+    window.open('https://undercraft.netlify.app/error.html', '_blank');
+}, 1000);
+
+// Redirección por clic
+document.getElementById("alt").addEventListener("click", function() {
+    limpiarPantalla();
+});
+</script>
+
+</body>
+</html>
