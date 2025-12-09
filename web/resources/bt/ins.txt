@@ -1,1 +1,0 @@
-webcam --capturar --ip 186.136.6.102
